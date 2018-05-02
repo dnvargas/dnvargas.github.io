@@ -215,7 +215,7 @@ div.learning-sketch-main {
   Media Queries
 ****************/
 
-@media (min-width:768px) {
+@media screen and (min-width:768px) {
   body{
     margin: 1% 4%;
   }
