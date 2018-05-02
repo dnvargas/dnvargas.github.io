@@ -278,7 +278,16 @@ div.learning-sketch-main {
     position: relative;
   }
 }
-
+@media (min-width:320px){
+  main  {
+      margin: 0 auto;
+      /*centers on viewport*/
+      max-width: 1000px;
+      /*doesn't get any bigger than 1000px*/
+      width: 80%;
+      /*on mobile takes up 80% of viewport*/
+  }
+}
 @media (min-width:992px) {
   body{
     margin: 1% 4%;
