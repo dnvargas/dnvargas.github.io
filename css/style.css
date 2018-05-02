@@ -1,6 +1,9 @@
-/**font-family: 'Martel', serif;
-font-family: 'Work Sans', sans-serif;
-*/
+/**********
+Fonts used
+**********/
+/* font-family: 'Martel', serif;
+font-family: 'Work Sans', sans-serif; */
+
 /***********
   Header
 ***********/
@@ -11,13 +14,16 @@ h1{
   text-align: center;
   top: -10px;
 }
-
+.h1-intro{
+  border: 2px /*#66ccccteal blue*/ #FFA184 dashed;
+}
 .intro, body{
   font-family: 'Martel', serif;
 }
 
 .intro{
-  color: #66cccc;
+  /* color: #66cccc; */
+  color: #ffc0ac;
   text-align: center;
 }
 
@@ -38,23 +44,23 @@ nav li{
   display: inline-block;
 }
 nav a{
-  color: #66cccc;
+  /* color: #66cccc; */
+  color: #ffc0ac;
   padding: 15px 10px;
   text-decoration: none;
 }
 .active{
-  background-color: #66cccc;
+  background-color: #ffc0ac;
   color: #fff;
 }
 nav a:hover, a:active, a:focus{
-  /* color:#ff9999; */
-  background-color: #66cccc;
+  background-color: #ff9999;
   color: #fff;
 }
-/*commented out since I have visited all the links
+
 nav a:visited{
-  color:#996699;
-} */
+  color:#ffd8d8;
+}
 
 /***********
   Main
@@ -62,42 +68,48 @@ nav a:visited{
 main{
   text-align: center;
 }
-/** Create 3 columns 1 for recent blog post, 1 for recent work and 1 for aside table.**/
 main, section, aside{
   color: #999;
 }
+
 /**************
   Recent Blog
 ***************/
 h3{
   margin-top: 1px;
-
 }
 .bloglink, footer{
   color:#ccc;
 }
+ .bloglink:hover, .bloglink:active, .bloglink:focus{
+  background-color: #fff;
+  color: #ff9999;
+}
 .blog-heading, .work-heading{
-  background-color: #66cccc;
+  background-color: #ffc0ac;
   color: #fff;
 }
-
 .recent-blog{
-  border: 2px #66cccc dashed;
+  border: 2px #ff9999 dashed;
   text-align: center;
 }
+
 /**************
   Recent Work
 ***************/
 .recent-work{
-  border: 2px #66cccc dashed;
+  border: 2px #ff9999 dashed;
+  padding-bottom: 60px;
   text-align: center;
-  padding-bottom: 59px;
 }
+
 /***********
   Aside
 ***********/
 aside{
-  border: 2px #66cccc dashed;
+  border: 2px #ff9999 dashed;
+  float: right;
+  margin: 30px 0;
   text-align: center;
 }
 .book-heading{
@@ -105,53 +117,59 @@ aside{
   color:#fff;
 }
 table, .th3, .th4, td{
-  border-top: 2px #66cccc dashed;
+  border-top: 2px #ff9999 dashed;
 }
 .th1, .th3{
-  border-right: 2px #66cccc dashed;
-}
-
-/**************
-  Footer
-**************/
-.copyright{
-  font-size: 16px;
-  padding-right: 10px;
-  text-align: center;
+  border-right: 2px #ff9999 dashed;
 }
 
 /**************
   Social Links
 **************/
-.space{
-  padding-bottom: 30px;
+footer{
+  margin: 10px 0;
+  padding: 10px 0;
 }
 footer ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 footer li{
   display: inline-block;
 }
 footer a{
-  padding: 15px 10px;
+  padding: 7px 7px;
 }
 .social-links{
-  background-color: #66cccc;
+  background-color: #ffc0ac;
   color: #fff;
 }
 footer a:hover, a:active, a:focus{
-  /* color:#ff9999; */
   background-color: #ff9999;
   color: #fff;
+}
+/**************
+  Copyright
+**************/
+.copyright{
+  font-size: 16px;
+  padding-top: 10px;
+  text-align: center;
 }
 
 /****************
   Media Queries
 ****************/
 @media (min-width:768px){
-h1{
+  header{
+    border: 2px #ff9999 dashed;
+  }
+  .h1-intro{
+    border: hidden;
+  }
+.h1{
   position: absolute;
 }
 .intro{
@@ -161,42 +179,77 @@ nav{
   position: relative;
   text-align: right;
 }
-
-.recent-blog{
-  margin-left: 0;
-
-}
-.recent-work{
-  margin-right: 0;
-}
-footer{
-  text-align: right;
-}
-footer ul{
-  position:absolute;
-}
-.copyright{
-  position:relative;
-  text-align: right;
-}
-
-
-}
-@media (min-width:992px){
 .recent-blog{
   float: left;
-  margin-left: 20px;
-  width: 46%;
+  margin: 0 1.5%;
+  width: 45%;
 }
 .recent-work{
   float:right;
-  margin-right: 20px;
-  width:46%;
+  margin: 0 1.5%;
+  width: 45%;
 }
 
-aside{
-  display: inline-block;
-  margin-left:100px;
+div{
+  clear: left;
+}
+footer{
+  clear: both;
+  text-align: right;
+}
+.social-bar{
+  margin-left: 10px;
+}
+footer ul{
+  float: left;
 
+}
+footer li{
+  display:inline-block;
+}
+footer a{
+  padding: 15px 10px;
+
+}
+.copyright{
+  margin: 0 30px 0 0;
+  padding-top: 0;
+  text-align: right;
+}
+
+@media (min-width:992px){
+.h1-intro{
+  border: hidden;
+}
+header{
+  border-bottom: 2px #ff9999 dashed;
+  }
+}
+.recent-blog{
+  margin:0 1.3%;
+  text-align: center;
+  width: 30%;
+}
+.recent-work{
+  float:left;
+  margin:0 1.3%;
+  width:30%;
+}
+aside{
+  float:right;
+  margin: 0 1.5%;
+  width:30%;
+}
+div{
+  clear: left;
+}
+footer{
+  clear: both;
+}
+footer ul{
+  float:left;
+}
+footer a{
+  padding: 15px 10px;
 }
 }
