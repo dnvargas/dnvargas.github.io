@@ -15,14 +15,13 @@ h1{
   top: -10px;
 }
 .h1-intro{
-  border: 2px /*#66ccccteal blue*/ #FFA184 dashed;
+  border: 2px #FFA184 dashed;
 }
 .intro, body{
   font-family: 'Martel', serif;
 }
 
 .intro{
-  /* color: #66cccc; */
   color: #ffc0ac;
   text-align: center;
 }
@@ -44,7 +43,6 @@ nav li{
   display: inline-block;
 }
 nav a{
-  /* color: #66cccc; */
   color: #ffc0ac;
   padding: 15px 10px;
   text-decoration: none;
