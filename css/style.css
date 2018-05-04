@@ -10,7 +10,8 @@ font-family: 'Work Sans', sans-serif; */
 ***********/
 
 h1 {
-  color: #ff9999;
+  /* color: #ff9999; Pink */
+  color: #ccc;
   font-family: 'Work Sans', sans-serif;
   font-size: 2.3em;
   text-align: center;
@@ -66,9 +67,10 @@ nav a:hover, a:active, a:focus {
   color: #fff;
 }
 
-nav a:visited {
+/* nav a:visited {
   color: #ffd8d8;
-}
+
+} */
 
 /***********
   Main
@@ -80,9 +82,9 @@ main {
 
 main, section, aside {
   color: #999;
-
 }
-.bloglink{
+
+.bloglink {
   color: #ff9999;
 }
 
@@ -90,22 +92,30 @@ main, section, aside {
   background-color: #fff;
   color: #ccc;
 }
+
 /**************
   Recent Blog
 ***************/
 
+
+.group a {
+  text-decoration: none;
+}
+
 h3 {
   margin-top: 1px;
 }
+
 .blog-heading, .work-heading {
   background-color: #ffc0ac;
   color: #fff;
-
 }
+
 .recent-blog {
   border: 2px #ff9999 dashed;
   text-align: center;
-  }
+}
+
 /**************
   Recent Work
 ***************/
@@ -168,6 +178,7 @@ footer a {
   background-color: #ffc0ac;
   color: #fff;
 }
+
 footer a:hover, a:active, a:focus {
   background-color: #ff9999;
   color: #fff;
@@ -176,6 +187,7 @@ footer a:hover, a:active, a:focus {
 /**************
   Copyright
 **************/
+
 .copyright {
   color: #ccc;
   font-size: 16px;
@@ -186,13 +198,16 @@ footer a:hover, a:active, a:focus {
 /***********************
   Learning-Sketch-Blog
 ***********************/
+
 div.learning-sketch-main {
   color: #747474;
   margin: 4%;
 }
-.learning-sketch-main{
+
+.learning-sketch-main {
   font-size: 1.2em;
 }
+
 .blog-title {
   color: #747474;
   text-align: center;
@@ -215,8 +230,8 @@ div.learning-sketch-main {
   Media Queries
 ****************/
 
-@media screen and (min-width:768px) {
-  body{
+@media (min-width:768px) {
+  body {
     margin: 1% 4%;
   }
   header {
@@ -278,18 +293,9 @@ div.learning-sketch-main {
     position: relative;
   }
 }
-@media (min-width:320px){
-  main  {
-      margin: 0 auto;
-      /*centers on viewport*/
-      max-width: 1000px;
-      /*doesn't get any bigger than 1000px*/
-      width: 80%;
-      /*on mobile takes up 80% of viewport*/
-  }
-}
-@media (min-width:992px) {
-  body{
+
+@media (min-width:1025px) {
+  body {
     margin: 1% 4%;
   }
   .h1-intro {
