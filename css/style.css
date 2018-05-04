@@ -229,7 +229,12 @@ div.learning-sketch-main {
 /****************
   Media Queries
 ****************/
-
+@media screen and (max-width: 768px) {
+      .group {
+      display: block;
+      max-width: 100%;
+    }
+}
 @media (min-width:768px) {
   body {
     margin: 1% 4%;
