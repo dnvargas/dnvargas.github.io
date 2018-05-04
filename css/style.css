@@ -4,7 +4,9 @@ Fonts used
 
 /* font-family: 'Martel', serif;
 font-family: 'Work Sans', sans-serif; */
-
+*{
+  box-sizing: border-box;
+}
 /***********
   Header
 ***********/
@@ -230,7 +232,7 @@ div.learning-sketch-main {
   Media Queries
 ****************/
 @media screen and (max-width: 768px) {
-      .group {
+      .recent-blog, .recent-work, aside {
       display: block;
       max-width: 100%;
     }
