@@ -231,7 +231,7 @@ div.learning-sketch-main {
 /****************
   Media Queries
 ****************/
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
       .recent-blog, .recent-work, aside {
       display: block;
       max-width: 100%;
@@ -346,4 +346,4 @@ div.learning-sketch-main {
     margin: 10px 250px 60px 250px;
     position: relative;
   }
-}
+} */
