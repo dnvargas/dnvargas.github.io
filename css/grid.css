@@ -1,6 +1,11 @@
 *{
   box-sizing: border-box;
 }
+
+header, main, .recent-blog, .recent-work, .books{
+ text-align: center;
+}
+/*******      ************/
 header{
   grid-area: header;
 }
@@ -22,9 +27,12 @@ main{
 footer{
   grid-area: footer;
 }
+/*******      ************/
 .container{
   border: 2px solid #ff9933;
   display: grid;
+  height: 100vh;
+  grid-auto-rows: minmax(150px, auto);
   grid-gap: 10px;
   grid-template-areas:
   "nav"
@@ -33,9 +41,13 @@ footer{
   "recent-blog"
   "recent-work"
   "aside"
+  "aside"
+  "aside"
   "footer";
+  grid-template-columns: 1fr;
   text-align: center;
 }
+/*******      ************/
 nav{
   padding: 0 10px;
 }
@@ -45,6 +57,11 @@ nav ul{
   list-style-type: none;
   padding-left: 0;
 }
+/*******      ************/
+.aside{
+  overflow: scroll;
+}
+/*******      ************/
 footer {
   margin: 10px 0;
   padding: 10px 0;
@@ -78,28 +95,7 @@ footer a:hover, a:active, a:focus {
       Media Queries
 **********************************************/
 @media only screen and (min-width:320px){
-  body{
-    margin: 0 auto;
-    width: 70%;
-  }
 
-.container{
-  display: grid;
-  height:100vh;
-  grid-gap: 10px;
-  grid-template-areas:
-  "nav"
-  "header"
-  "main"
-  "recent-blog"
-  "recent-work"
-  "aside"
-  "footer"
-}
-
- header, main, .recent-blog, .recent-work, .books{
-   text-align: center;
- }
 }
 
 @media (min-width:768px){
@@ -111,7 +107,6 @@ footer a:hover, a:active, a:focus {
     display: grid;
     height:100vh;
     grid-template-columns: 1fr 1fr;
-
     grid-template-rows:
     150px
     150px
@@ -120,8 +115,6 @@ footer a:hover, a:active, a:focus {
     200px
     150px
     100px;
-
-
     grid-gap: 10px;
     grid-template-areas:
     "header nav "
