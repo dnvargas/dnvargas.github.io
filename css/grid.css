@@ -74,7 +74,7 @@ nav ul{
  }
 }
 
-@media (min-width:768px){
+/* @media (min-width:768px){
   .container{
     display: grid;
     height:100vh;
@@ -88,8 +88,6 @@ nav ul{
     100px;
 
     grid-gap: 10px;
-    /* grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px minmax(150px, auto) 100px; */
     grid-template-areas:
     "header nav "
     "main main "
@@ -129,4 +127,4 @@ nav ul{
   nav{
     position: relative;
   }
-}
+} */
