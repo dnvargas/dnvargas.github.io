@@ -1,0 +1,132 @@
+*{
+  border: 2px #ccc solid;
+}
+header{
+  grid-area: header;
+}
+nav{
+  grid-area: nav;
+}
+main{
+  grid-area: main;
+}
+.recent-blog{
+  grid-area: recent-blog;
+}
+.recent-work{
+  grid-area: recent-work;
+}
+.books{
+  grid-area: aside;
+}
+footer{
+  grid-area: footer;
+}
+.container{
+  display: grid;
+  height:100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows:
+  50px
+  150px
+  150px
+  minmax(200px,1fr)
+  minmax(200px,1fr)
+  150px
+  100px;
+  grid-gap: 10px;
+  grid-template-areas:
+  "nav"
+  "header"
+  "main"
+  "recent-blog"
+  "recent-work"
+  "aside"
+  "footer";
+
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0;
+}
+/*********************************************
+      Media Queries
+**********************************************/
+@media (max-width:768px){
+.container{
+  display: grid;
+  height:100vh;
+  grid-gap: 10px;
+  grid-template-areas:
+  "nav"
+  "header"
+  "main"
+  "recent-blog"
+  "recent-work"
+  "aside"
+  "footer"
+}
+ header, main, .recent-blog, .recent-work, .books{
+   text-align: center;
+ }
+}
+
+@media (min-width:768px){
+  .container{
+    display: grid;
+    height:100vh;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows:
+    150px
+    150px
+    minmax(200px,1fr)
+    150px
+    100px;
+
+    grid-gap: 10px;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px minmax(150px, auto) 100px; */
+    grid-template-areas:
+    "header nav "
+    "main main "
+    "recent-blog recent-work"
+    "aside aside"
+    "footer footer"
+  }
+  header{
+    position: absolute ;
+  }
+  nav{
+    position: relative;
+  }
+}
+@media (min-width:992px){
+  .container{
+    display: grid;
+    height:100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-rows:
+    150px
+    150px
+    minmax(200px,1fr)
+    150px;
+
+    grid-gap: 10px;
+    grid-template-areas:
+    "header nav nav"
+    "main main main"
+    "recent-blog recent-work aside"
+    "footer footer footer"
+  }
+  header{
+    position: absolute ;
+  }
+  nav{
+    position: relative;
+  }
+}
