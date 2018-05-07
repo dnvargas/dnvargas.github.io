@@ -95,8 +95,9 @@ main, section, aside {
   background-color: #fff;
   color: #ccc;
 }
+
 .content{
-  border: 2px red solid;
+  /* border: 2px red solid; */
   overflow: auto;
 }
 /**************
@@ -215,11 +216,17 @@ div.learning-sketch-main {
 .blog-title {
   color: #747474;
   text-align: center;
+  text-decoration: underline;
 }
 
 .blog-date {
   display: none;
 }
+
+  .source{
+    text-decoration: underline;
+  }
+
 
 .outside-link {
   color: #ffc0ac;
@@ -228,6 +235,13 @@ div.learning-sketch-main {
 .outside-link:hover, .outside-link:active, .outside-link:focus {
   background-color: #fff;
   color: #ff9999;
+}
+/****************
+  Blog
+****************/
+.blog-text{
+  color: #747474;
+  text-align: center;
 }
 /****************
   Portfolio
@@ -247,12 +261,12 @@ div.learning-sketch-main {
 /****************
   Media Queries
 ****************/
-@media (max-width:768px){
-  body{
-    max-width: 768px;
-  }
+@media (max-width: 347px){
+  footer li{
+    display: block;
+    padding: 20px;
 }
-
+}
  @media (min-width:768px) {
   body {
     margin: 1% 4%;
@@ -317,7 +331,7 @@ div.learning-sketch-main {
   }
 }
 
-@media (min-width:1025px) {
+@media (min-width:1024px) {
   body {
     margin: 1% 4%;
   }
