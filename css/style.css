@@ -1,20 +1,7 @@
-/**********
-Fonts used
-**********/
-
-/* font-family: 'Martel', serif;
-font-family: 'Work Sans', sans-serif; */
-
-/**
-font-family: 'Allura', cursive;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Amatic SC', cursive;
-**/
-
 * {
   box-sizing: border-box;
 }
-body {
+body{
   font-family: 'Open Sans', sans-serif;
   margin: 2% 5%;
   text-align: center;
@@ -51,6 +38,7 @@ nav a, .header-text, .blog-heading, .work-heading, .book-heading, .social-links{
 /***************
   Font Colors
 ****************/
+/** Orange **/
  .header-text, nav a{
     color: #ffc0ac;
 }
@@ -58,36 +46,38 @@ nav a, .header-text, .blog-heading, .work-heading, .book-heading, .social-links{
 .header-title {
   color: darkslateblue;
 }
-
+/** White on Pink **/
 a:hover, a:active, a:focus{
   background-color: #ff9999;
   color: #fff;
 }
-
-main, section, aside {
+/** Medium Gray **/
+main, section, aside, .main-content, .treehouse {
   color: #999;
 }
 .greeting {
   color: khaki;
 }
-
+/** Pink **/
 .bloglink {
   color: #ff9999;
 }
-
+/** Light Gray on White **/
 .bloglink:hover, .bloglink:active, .bloglink:focus {
   background-color: #fff;
   color: #ccc;
 }
-
+/** White on Orange **/
 .active, .blog-heading, .work-heading, .social-links {
   background-color: #ffc0ac;
   color: #fff;
 }
+/** White on Pink **/
 .blog-heading:hover, .blog-heading:active, .blog-heading:focus, .work-heading:hover, .work-heading:active, .work-heading:focus{
   background-color: #ff9999;
   color: #fff;
 }
+/** White on Light Gray **/
 .book-heading {
   background-color: #ccc;
   color: #fff;
@@ -97,6 +87,7 @@ main, section, aside {
   background: khaki;
   color: #fff;
 }
+/** Light Gray **/
 .copyright {
   color: #ccc;
 }
@@ -273,17 +264,16 @@ div.learning-sketch-main {
   Portfolio
 ****************/
 .portfolio-text {
-  color: #747474;
+  color: darkslateblue;
+  font-weight: bold;
 }
 
 /****************
   About
 ****************/
-.about-text-main {
-  margin-top: 20px;
-  padding: 10px;
+footer{
+  margin-top: 10%;
 }
-
 /*****************************************************************
   Media Queries
 ****************/
@@ -331,7 +321,28 @@ div.learning-sketch-main {
     float: right;
     margin: 0 0 2% 0;
   }
-
+  nav a, .header-text, .blog-heading, .work-heading, .book-heading, .social-links{
+    font-size: 2em;
+  }
+  .header-title, .greeting {
+    font-size: 6em;
+  }
+  .greeting{
+    font-size: 3em;
+  }
+  .main-content{
+    font-size: 1.3em;
+    padding: 0 20%;
+  }
+  .follow-blog-text{
+    font-size: 1em;
+  }
+  .th1, .th2, .th3, .th4{
+    font-size: 1.5em;
+  }
+  .copyright {
+    font-size: 16px;
+  }
 }
 @media (min-width:768px){
   body {
@@ -391,6 +402,28 @@ div.learning-sketch-main {
     padding-top: 0;
     text-align: right;
   }
+  nav a, .header-text, .blog-heading, .work-heading, .book-heading, .social-links{
+    font-size: 2em;
+  }
+  .header-title, .greeting {
+    font-size: 5em;
+  }
+  .greeting{
+    font-size: 3em;
+  }
+  .main-content{
+    font-size: 1.2em;
+    padding: 0 20%;
+  }
+  .follow-blog-text{
+    font-size: 1em;
+  }
+  .th1, .th2, .th3, .th4{
+    font-size: 1.7em;
+  }
+  .copyright {
+    font-size: 16px;
+  }
   .blog-date {
     display: contents;
     position: absolute;
@@ -435,7 +468,31 @@ div.learning-sketch-main {
   .copyright{
     padding-top: 10px;
     }
-
+    .header-title{
+      margin-top: 4%;
+    }
+    nav a, .header-text, .blog-heading, .work-heading, .book-heading, .social-links{
+      font-size: 2.5em;
+    }
+    .header-title, .greeting {
+      font-size: 7em;
+    }
+    .greeting{
+      font-size: 4em;
+    }
+    .main-content{
+      font-size: 1.5em;
+      padding: 0 20%;
+    }
+    .follow-blog-text{
+      font-size: 1.2em;
+    }
+    .th1, .th2, .th3, .th4{
+      font-size: 1.5em;
+    }
+    .copyright {
+      font-size: 16px;
+    }
   .blog-date {
     display: contents;
     position: absolute;
@@ -447,16 +504,40 @@ div.learning-sketch-main {
 }
 @media (min-width:1440px) {
   body{
-    margin: 2% 10%;
+    margin: 2% 5%;
   }
   .header-title{
-    margin-top: 3%;
+    margin-top: 4%;
   }
-}@media (min-width:2560px) {
+  nav a, .header-text, .blog-heading, .work-heading, .book-heading, .social-links{
+    font-size: 2.5em;
+  }
+  .header-title, .greeting {
+    font-size: 7em;
+  }
+  .greeting{
+    font-size: 4em;
+  }
+  .main-content{
+    font-size: 1.5em;
+    padding: 0 20%;
+  }
+  .follow-blog-text{
+    font-size: 1.2em;
+  }
+  .th1, .th2, .th3, .th4{
+    font-size: 1.5em;
+  }
+  .copyright {
+    font-size: 16px;
+  }
+}
+@media (min-width:2560px) {
   body{
     margin: 2% 20%;
   }
   .header-title{
     margin-top: 3%;
   }
+
 }
