@@ -253,9 +253,20 @@ div.learning-sketch-main {
 /****************
   About
 ****************/
-.about-text{
-  color: #747474;
+.about-text-main{
+  /* background-color: #ffc0ac; */
+  /* color: #ffc0ac; */
   text-align: center;
+  margin-top: 20px;
+  padding:10px;
+}
+.about-text{
+  /* color: #ccc; */
+  text-align: center;
+}
+.call-to-action{
+  text-align: center;
+
 }
 
 /****************
