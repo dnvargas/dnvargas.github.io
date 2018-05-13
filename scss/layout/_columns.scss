@@ -11,22 +11,21 @@ h3 {
 }
 
 .recent-blog {
-  border: 2px #ff9999 dashed;
+  @extend %border;
 }
 
 /**************
   Recent Work
 ***************/
 .recent-work {
-  border: 2px #ff9999 dashed;
-
+  @extend %border;
 }
 
 /***********
   Aside
 ***********/
 aside{
-  border: 2px #ff9999 dashed;
+  @extend %border;
 }
 
 table, .th3, .th4, td {

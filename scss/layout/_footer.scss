@@ -3,14 +3,11 @@
 **************/
 
 .main-footer {
-  margin: 10px 0;
-  padding: 10px 0;
+  @extend %t-space;
 }
 
 footer ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  @extend %no-style;
 }
 
 footer li {
