@@ -1,0 +1,86 @@
+
+
+/*****************
+  Fonts and Size
+*****************/
+.main-nav, .header-text, .blog-heading, .blog-title, .work-heading, .work-title, .book-heading, .th1, .th2, .th3, .th4, .social-links{
+  font-family: 'Amatic SC', cursive;
+}
+nav a, .header-text, .blog-heading, .blog-title, .work-heading, .book-heading, .social-links{
+  font-size: 1.8em;
+}
+.header-title, .greeting {
+  font-family: 'Allura', cursive;
+  font-size: 5.5em;
+}
+.greeting{
+  font-size: 2.5em;
+}
+.th1, .th2, .th3, .th4, .blog-title, .work-title{
+  font-size: 1.5em;
+}
+.copyright {
+  font-size: 16px;
+}
+/***************
+  Letter Spacing
+****************/
+.blog-heading, .blog-title, .work-title, .work-heading, .book-heading, .th1, .th2, .th3, .th4{
+  letter-spacing: .1em;
+}
+/***************
+  Font Colors
+****************/
+/** Orange **/
+ .header-text, nav a{
+    color: #ffc0ac;
+}
+
+.header-title {
+  color: darkslateblue;
+}
+/** White on Pink **/
+a:hover, a:active, a:focus{
+  background-color: #ff9999;
+  color: #fff;
+}
+/** Medium Gray **/
+main, section, aside, .main-content, .treehouse {
+  color: #999;
+}
+.greeting {
+  color: khaki;
+}
+/** Pink **/
+.bloglink {
+  color: #ff9999;
+}
+/** Light Gray on White **/
+.bloglink:hover, .bloglink:active, .bloglink:focus {
+  background-color: #fff;
+  color: #ccc;
+}
+/** White on Orange **/
+.active, .blog-heading, .work-heading, .social-links {
+  background-color: #ffc0ac;
+  color: #fff;
+}
+/** White on Pink **/
+.blog-heading:hover, .blog-heading:active, .blog-heading:focus, .work-heading:hover, .work-heading:active, .work-heading:focus{
+  background-color: #ff9999;
+  color: #fff;
+}
+/** White on Light Gray **/
+.book-heading {
+  background-color: #ccc;
+  color: #fff;
+}
+
+.th1, .th2, .th3, .th4{
+  background: khaki;
+  color: #fff;
+}
+/** Light Gray **/
+.copyright {
+  color: #ccc;
+}

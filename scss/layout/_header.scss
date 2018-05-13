@@ -1,0 +1,42 @@
+/******************
+  Header Styles
+***********/
+.header {
+  border: 2px #FFA184 dashed;
+}
+
+.header-title {
+  margin: 20px 0;
+  top: -10px;
+}
+
+.header-text {
+  margin: 0;
+}
+
+/**********
+  Nav
+***********/
+.main-nav {
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  padding: 15px 10px;
+  text-decoration: none;
+}
+
+/* nav a:visited {
+  color: #ffd8d8;
+} */

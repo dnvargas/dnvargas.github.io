@@ -1,0 +1,38 @@
+/**************
+  Recent Blog
+***************/
+/** Takes out underline of headings **/
+.group a {
+  text-decoration: none;
+}
+
+h3 {
+  margin-top: 1px;
+}
+
+.recent-blog {
+  border: 2px #ff9999 dashed;
+}
+
+/**************
+  Recent Work
+***************/
+.recent-work {
+  border: 2px #ff9999 dashed;
+
+}
+
+/***********
+  Aside
+***********/
+aside{
+  border: 2px #ff9999 dashed;
+}
+
+table, .th3, .th4, td {
+  border-top: 2px #ff9999 dashed;
+}
+
+.th1, .th3 {
+  border-right: 2px #ff9999 dashed;
+}
