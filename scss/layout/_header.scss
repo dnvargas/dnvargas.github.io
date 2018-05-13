@@ -2,8 +2,7 @@
   Header Styles
 ***********/
 .header {
-// @extend %border;
-border: 2px #ff9999 dashed;
+@extend %border;
 }
 
 .header-title {
@@ -19,16 +18,11 @@ border: 2px #ff9999 dashed;
   Nav
 ***********/
 .main-nav {
-  // @extend %t-space;
-  margin: 10px 0;
-  padding: 10px 0;
+  @extend %t-space;
 }
 
 nav ul {
-  // @extend %no-style;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  @extend %no-style;
 }
 
 nav li {

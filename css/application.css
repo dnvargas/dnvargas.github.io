@@ -104,9 +104,6 @@ main, section, aside, .main-content, .treehouse {
 /******************
   Header Styles
 ***********/
-.header {
-  border: 2px #ff9999 dashed; }
-
 .header-title {
   margin: 20px 0;
   top: -10px; }
@@ -117,15 +114,6 @@ main, section, aside, .main-content, .treehouse {
 /**********
   Nav
 ***********/
-.main-nav {
-  margin: 10px 0;
-  padding: 10px 0; }
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-
 nav li {
   display: inline-block; }
 
@@ -146,21 +134,12 @@ nav a {
 h3 {
   margin-top: 1px; }
 
-.recent-blog {
-  border: 2px #ff9999 dashed; }
-
 /**************
   Recent Work
 ***************/
-.recent-work {
-  border: 2px #ff9999 dashed; }
-
 /***********
   Aside
 ***********/
-aside {
-  border: 2px #ff9999 dashed; }
-
 table, .th3, .th4, td {
   border-top: 2px #ff9999 dashed; }
 
@@ -170,15 +149,6 @@ table, .th3, .th4, td {
 /**************
   Social Links
 **************/
-.main-footer {
-  margin: 10px 0;
-  padding: 10px 0; }
-
-footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-
 footer li {
   display: inline-block; }
 
@@ -192,5 +162,19 @@ footer a {
   color: #ccc;
   font-size: 16px;
   padding-top: 10px; }
+
+.header, .recent-blog, .recent-work, aside {
+  border: 2px #ff9999 dashed; }
+
+Top Space
+.main-nav, Top Space
+.main-footer {
+  margin: 10px 0;
+  padding: 10px 0; }
+
+No style and Space nav ul, nav No style and Space ul, No style and Space footer ul, footer No style and Space ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
 
 /*# sourceMappingURL=application.css.map */
