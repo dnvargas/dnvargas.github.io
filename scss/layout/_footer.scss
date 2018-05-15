@@ -6,6 +6,10 @@
   @extend %t-space;
 }
 
+footer{
+  margin-top: 10%;
+}
+
 footer ul{
   @extend %no-style;
 }

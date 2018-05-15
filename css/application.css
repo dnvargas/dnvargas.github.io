@@ -9,7 +9,7 @@ body {
 /*****************
   Fonts and Size
 *****************/
-.main-nav, .header-text, .blog-heading, .blog-title, .work-heading, .work-title, .book-heading, .th1, .th2, .th3, .th4, .social-links {
+.main-nav, .header-text, .blog-heading, .work-heading, .work-title, .book-heading, .th1, .th2, .th3, .th4, .social-links {
   font-family: 'Amatic SC', cursive; }
 
 nav a, .header-text, .blog-heading, .blog-title, .work-heading, .book-heading, .social-links {
@@ -31,7 +31,7 @@ nav a, .header-text, .blog-heading, .blog-title, .work-heading, .book-heading, .
 /***************
   Letter Spacing
 ****************/
-.blog-heading, .blog-title, .work-title, .work-heading, .book-heading, .th1, .th2, .th3, .th4 {
+.blog-heading, .work-title, .work-heading, .book-heading, .th1, .th2, .th3, .th4 {
   letter-spacing: .1em; }
 
 /***************
@@ -42,7 +42,7 @@ nav a, .header-text, .blog-heading, .blog-title, .work-heading, .book-heading, .
   color: #ffc0ac; }
 
 .header-title {
-  color: #483F92; }
+  color: #483f92; }
 
 /** White on Pink **/
 a:hover, a:active, a:focus {
@@ -87,6 +87,37 @@ main, section, aside, .main-content, .treehouse {
 /** Light Gray **/
 .copyright {
   color: #ccc; }
+
+/***********************
+  Learning-Sketch-Blog
+***********************/
+div.learning-sketch-main {
+  color: #999;
+  margin: 4%; }
+
+.learning-sketch-main {
+  font-size: 1.2em; }
+
+.blog-title {
+  color: #999;
+  text-decoration: underline; }
+
+.blog-date {
+  display: none; }
+
+.source {
+  text-decoration: underline; }
+
+.absolute-link {
+  color: #ffc0ac; }
+
+.absolute-link:hover, .absolute-link:active, .absolute-link:focus {
+  background-color: #fff;
+  color: #ff9999; }
+
+.blog-text, .portfolio-text, .treehouse {
+  color: #483f92;
+  font-weight: bold; }
 
 /***********
   Main
@@ -149,6 +180,9 @@ table, .th3, .th4, td {
 /**************
   Social Links
 **************/
+footer {
+  margin-top: 10%; }
+
 footer li {
   display: inline-block; }
 
@@ -166,13 +200,11 @@ footer a {
 .header, .recent-blog, .recent-work, aside {
   border: 2px #ff9999 dashed; }
 
-Top Space
-.main-nav, Top Space
-.main-footer {
+.main-nav, .main-footer {
   margin: 10px 0;
   padding: 10px 0; }
 
-No style and Space nav ul, nav No style and Space ul, No style and Space footer ul, footer No style and Space ul {
+nav ul, footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0; }

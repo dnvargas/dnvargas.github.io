@@ -1,10 +1,35 @@
 // Descriptive color variables
 
-$white :       #fff;
-$black :       #000;
-$silver :      #ccc;
+$white       : #fff;
+$black       : #000;
+$silver      : #ccc;
 $dusty-gray  : #999;
 $wax-flower  : #ffc0ac;
-$mona-lisa :   #ff9999;
-$khaki :       #f0e68c;
-$gigas :       #483f92;
+$mona-lisa   : #ff9999;
+$khaki       : #f0e68c;
+$gigas       : #483f92;
+
+//Functional color variables
+
+//Main colors Primary, Secondary, Tertiary, Quaternary
+$color-prim           : $wax-flower;
+$color-sec            : $mona-lisa;
+$color-ter            : $khaki;
+$color-quat           : $silver;
+$color-body           : $white;
+
+//Text colors
+$color-text-light     : $silver;
+$color-text-base      : $dusty-gray;
+$color-text-pop       : $gigas;
+
+// Border colors
+$color-border         : $mona-lisa;
+
+//Link colors
+$color-relative       : $mona-lisa;
+$color-relative-hover : $wax-flower;
+$color-absolute       : $wax-flower;
+$color-absolute-hover : $mona-lisa;
+$color-bloglink       : $mona-lisa;
+$color-bloglink-hover : $silver;
