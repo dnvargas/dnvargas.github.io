@@ -2,7 +2,7 @@
   Header Styles
 ***********/
 .header {
-@extend %border;
+  border: $b;
 }
 
 .header-title {

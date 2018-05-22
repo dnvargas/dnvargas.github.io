@@ -10,28 +10,17 @@ h3 {
   margin-top: 1px;
 }
 
-.recent-blog {
-  @extend %border;
-}
-
-/**************
-  Recent Work
-***************/
-.recent-work {
-  @extend %border;
+aside, .recent-blog, .recent-work {
+  border: $b;
 }
 
 /***********
   Aside
 ***********/
-aside{
-  @extend %border;
-}
-
 table, .th3, .th4, td {
-  border-top: 2px #ff9999 dashed;
+  border-top: $b;
 }
 
 .th1, .th3 {
-  border-right: 2px #ff9999 dashed;
+  border-right: $b;
 }

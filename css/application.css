@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 2% 5%;
   text-align: center; }
 
@@ -10,13 +10,13 @@ body {
   Fonts and Size
 *****************/
 .main-nav, .header-text, .blog-heading, .work-heading, .work-title, .book-heading, .th1, .th2, .th3, .th4, .social-links {
-  font-family: 'Amatic SC', cursive; }
+  font-family: "Amatic SC", cursive; }
 
 nav a, .header-text, .blog-heading, .blog-title, .work-heading, .book-heading, .social-links {
   font-size: 1.8em; }
 
 .header-title, .greeting {
-  font-family: 'Allura', cursive;
+  font-family: "Allura", cursive;
   font-size: 5.5em; }
 
 .greeting {
@@ -135,6 +135,9 @@ div.learning-sketch-main {
 /******************
   Header Styles
 ***********/
+.header {
+  border: 2px #ff9999 dashed; }
+
 .header-title {
   margin: 20px 0;
   top: -10px; }
@@ -165,9 +168,9 @@ nav a {
 h3 {
   margin-top: 1px; }
 
-/**************
-  Recent Work
-***************/
+aside, .recent-blog, .recent-work {
+  border: 2px #ff9999 dashed; }
+
 /***********
   Aside
 ***********/
@@ -196,9 +199,6 @@ footer a {
   color: #ccc;
   font-size: 16px;
   padding-top: 10px; }
-
-.header, .recent-blog, .recent-work, aside {
-  border: 2px #ff9999 dashed; }
 
 .main-nav, .main-footer {
   margin: 10px 0;

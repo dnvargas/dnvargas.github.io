@@ -33,3 +33,23 @@ $color-absolute       : $wax-flower;
 $color-absolute-hover : $mona-lisa;
 $color-bloglink       : $mona-lisa;
 $color-bloglink-hover : $silver;
+
+//Font stack
+
+$stack-capitol   : 'Amatic SC', cursive;
+$stack-cursive   : 'Allura', cursive;
+$stack-open-sans : 'Open Sans', sans-serif;
+
+//Border
+$b : 2px $color-border dashed;
+
+// I dont have any images yet
+
+//Asset paths        Interpolation #{}
+
+// $path-img : '../img';
+
+// Media query breakpoints
+
+$brk-narrow : '(max-width: 768px)';
+$brl-wide : '(max-width: 1024px)';

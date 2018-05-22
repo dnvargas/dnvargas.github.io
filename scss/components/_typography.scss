@@ -2,13 +2,13 @@
   Fonts and Size
 *****************/
 .main-nav, .header-text, .blog-heading, .work-heading, .work-title, .book-heading, .th1, .th2, .th3, .th4, .social-links{
-  font-family: 'Amatic SC', cursive;
+  font-family: $stack-capitol;
 }
 nav a, .header-text, .blog-heading, .blog-title, .work-heading, .book-heading, .social-links{
   font-size: 1.8em;
 }
 .header-title, .greeting {
-  font-family: 'Allura', cursive;
+  font-family: $stack-cursive;
   font-size: 5.5em;
 }
 .greeting{
