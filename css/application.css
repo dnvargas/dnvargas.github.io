@@ -9,14 +9,17 @@ body {
 /*****************
   Fonts and Size
 *****************/
-.main-nav, .header-text, .blog-heading, .work-heading, .work-title, .book-heading, .th1, .th2, .th3, .th4, .social-links {
+.main-nav, .header-text, .symbol, .blog-heading, .work-heading, .work-title, .book-heading, .th1, .th2, .th3, .th4, .social-links {
   font-family: "Amatic SC", cursive; }
 
-nav a, .header-text, .blog-heading, .blog-title, .work-heading, .book-heading, .social-links {
+nav a, .header-text, .symbol, .blog-heading, .blog-title, .work-heading, .book-heading, .social-links {
   font-size: 1.8em; }
   @media (min-width: 348px) {
-    nav a, .header-text, .blog-heading, .blog-title, .work-heading, .book-heading, .social-links {
+    nav a, .header-text, .symbol, .blog-heading, .blog-title, .work-heading, .book-heading, .social-links {
       font-size: 2em; } }
+  @media (min-width: 1024px) {
+    nav a, .header-text, .symbol, .blog-heading, .blog-title, .work-heading, .book-heading, .social-links {
+      font-size: 2.5em; } }
 
 .header-title {
   font-family: "Allura", cursive;
@@ -24,6 +27,9 @@ nav a, .header-text, .blog-heading, .blog-title, .work-heading, .book-heading, .
   @media (min-width: 348px) {
     .header-title {
       font-size: 6em; } }
+  @media (min-width: 1024px) {
+    .header-title {
+      font-size: 7em; } }
 
 .greeting {
   font-family: "Allura", cursive;
@@ -31,12 +37,21 @@ nav a, .header-text, .blog-heading, .blog-title, .work-heading, .book-heading, .
   @media (min-width: 348px) {
     .greeting {
       font-size: 3em; } }
+  @media (min-width: 1024px) {
+    .greeting {
+      font-size: 4em; } }
 
 .main-content {
   font-size: 1.3em; }
+  @media (min-width: 1024px) {
+    .main-content {
+      font-size: 1.5em; } }
 
 .follow-blog-text {
   font-size: 1em; }
+  @media (min-width: 1024px) {
+    .follow-blog-text {
+      font-size: 1.2em; } }
 
 .th1, .th2, .th3, .th4, .blog-title, .work-title {
   font-size: 1.5em; }
@@ -107,6 +122,9 @@ main, section, aside, .main-content, .treehouse {
 .copyright {
   color: #ccc; }
 
+.symbol {
+  color: #ccc; }
+
 /***********************
   Learning-Sketch-Blog
 ***********************/
@@ -166,17 +184,27 @@ div.learning-sketch-main {
     border: 2px #ff9999 dashed; } }
 
 .header-title {
-  margin: 20px 0;
+  margin: 5% 0 0 0;
   top: -10px; }
   @media (min-width: 768px) {
     .header-title {
       position: absolute; } }
+  @media (min-width: 1024px) {
+    .header-title {
+      margin-top: 4%; } }
 
 .header-text {
   margin: 0; }
   @media (min-width: 768px) {
     .header-text {
-      text-align: left; } }
+      text-align: left;
+      padding-top: 2%; } }
+  @media (min-width: 1024px) {
+    .header-text {
+      padding-top: 2%; } }
+  @media (min-width: 2560px) {
+    .header-text {
+      padding-top: 3%; } }
 
 /**********
   Nav
@@ -190,6 +218,10 @@ div.learning-sketch-main {
 
 nav li {
   display: inline-block; }
+  @media (max-width: 347px) {
+    nav li {
+      display: block;
+      padding: 20px; } }
 
 nav a {
   padding: 15px 10px;
@@ -221,6 +253,18 @@ aside, .recent-blog, .recent-work {
     float: left;
     margin: 0 5% 0 2%;
     width: 28%; } }
+
+.blog-date {
+  display: contents;
+  position: absolute; }
+
+@media (min-width: 768px) {
+  div.learning-sketch-main {
+    margin: 10px 130px 60px 130px;
+    position: relative; } }
+  @media (min-width: 768px) and (min-width: 1024px) {
+    div.learning-sketch-main {
+      margin: 10px 250px 60px 250px; } }
 
 /**************
   Recent Work
@@ -286,6 +330,11 @@ footer li {
 
 footer a {
   padding: 15px 10px; }
+  @media (min-width: 348px) {
+    footer a {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px; } }
 
 /**************
   Copyright

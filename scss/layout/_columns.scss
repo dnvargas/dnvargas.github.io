@@ -25,6 +25,20 @@ aside, .recent-blog, .recent-work {
       width: 28%;
   }
 }
+
+  .blog-date {
+    display: contents;
+    position: absolute;
+  }
+    div.learning-sketch-main {
+      @media #{$brk-medium}{
+      margin: 10px 130px 60px 130px;
+      position: relative;
+      @media #{$brk-large}{
+        margin: 10px 250px 60px 250px;
+      }
+    }
+  }
 /**************
   Recent Work
 ***************/

@@ -31,6 +31,11 @@ footer li {
 
 footer a {
   padding: 15px 10px;
+  @media #{$brk-small}{
+    display:flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
 }
 
 /**************

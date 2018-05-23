@@ -1,13 +1,16 @@
 /*****************
   Fonts and Size
 *****************/
-.main-nav, .header-text, .blog-heading, .work-heading, .work-title, .book-heading, .th1, .th2, .th3, .th4, .social-links{
+.main-nav, .header-text,.symbol, .blog-heading, .work-heading, .work-title, .book-heading, .th1, .th2, .th3, .th4, .social-links{
   font-family: $stack-capitol;
 }
-nav a, .header-text, .blog-heading, .blog-title, .work-heading, .book-heading, .social-links{
+nav a, .header-text,.symbol, .blog-heading, .blog-title, .work-heading, .book-heading, .social-links{
   font-size: 1.8em;
   @media #{$brk-small}{
     font-size: 2em;
+  }
+  @media #{$brk-large}{
+    font-size: 2.5em;
   }
 }
 .header-title{
@@ -16,6 +19,9 @@ nav a, .header-text, .blog-heading, .blog-title, .work-heading, .book-heading, .
   @media #{$brk-small}{
       font-size: 6em;
   }
+  @media #{$brk-large}{
+    font-size: 7em;
+  }
 }
 .greeting{
   font-family: $stack-cursive;
@@ -23,12 +29,21 @@ nav a, .header-text, .blog-heading, .blog-title, .work-heading, .book-heading, .
   @media #{$brk-small}{
     font-size: 3em;
   }
+  @media #{$brk-large}{
+    font-size: 4em;
+  }
 }
 .main-content{
   font-size: 1.3em;
+  @media #{$brk-large}{
+    font-size: 1.5em;
+  }
 }
 .follow-blog-text{
   font-size: 1em;
+  @media #{$brk-large}{
+      font-size: 1.2em;
+  }
 }
 .th1, .th2, .th3, .th4, .blog-title, .work-title{
   font-size: 1.5em;
@@ -100,6 +115,10 @@ main, section, aside, .main-content, .treehouse {
 /** Light Gray **/
 .copyright {
   color: $color-text-light;
+}
+
+.symbol{
+  color: $color-quat;
 }
 /***********************
   Learning-Sketch-Blog

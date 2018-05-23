@@ -13,17 +13,26 @@ header{
   }
 }
 .header-title {
-  margin: 20px 0;
+  margin: 5% 0 0 0;
   top: -10px;
   @media #{$brk-medium}{
     position: absolute;
   }
+  @media #{$brk-large}{
+    margin-top: 4%;
+  }
 }
-
 .header-text {
   margin: 0;
   @media #{$brk-medium}{
     text-align: left;
+    padding-top: 2%;
+  }
+  @media #{$brk-large}{
+    padding-top: 2%;
+  }
+  @media #{$brk-super-large}{
+    padding-top: 3%;
   }
 }
 
@@ -45,6 +54,10 @@ nav ul {
 
 nav li {
   display: inline-block;
+  @media #{$brk-very-small}{
+    display: block;
+    padding: 20px;
+  }
 }
 
 nav a {
