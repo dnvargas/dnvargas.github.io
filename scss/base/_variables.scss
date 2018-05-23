@@ -50,6 +50,8 @@ $b : 2px $color-border dashed;
 // $path-img : '../img';
 
 // Media query breakpoints
-
-$brk-narrow : '(max-width: 768px)';
-$brl-wide : '(max-width: 1024px)';
+$brk-very-small:'(max-width: 347px)';
+$brk-small:'(min-width: 348px)';
+$brk-medium:'(min-width: 768px)';
+$brk-large:'(min-width: 1024px)';
+$brk-very-large:'(min-width: 1440px)';

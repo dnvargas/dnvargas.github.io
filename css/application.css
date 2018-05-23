@@ -14,16 +14,35 @@ body {
 
 nav a, .header-text, .blog-heading, .blog-title, .work-heading, .book-heading, .social-links {
   font-size: 1.8em; }
+  @media (min-width: 348px) {
+    nav a, .header-text, .blog-heading, .blog-title, .work-heading, .book-heading, .social-links {
+      font-size: 2em; } }
 
-.header-title, .greeting {
+.header-title {
   font-family: "Allura", cursive;
   font-size: 5.5em; }
+  @media (min-width: 348px) {
+    .header-title {
+      font-size: 6em; } }
 
 .greeting {
+  font-family: "Allura", cursive;
   font-size: 2.5em; }
+  @media (min-width: 348px) {
+    .greeting {
+      font-size: 3em; } }
+
+.main-content {
+  font-size: 1.3em; }
+
+.follow-blog-text {
+  font-size: 1em; }
 
 .th1, .th2, .th3, .th4, .blog-title, .work-title {
   font-size: 1.5em; }
+  @media (min-width: 768px) {
+    .th1, .th2, .th3, .th4, .blog-title, .work-title {
+      font-size: 1.7em; } }
 
 .copyright {
   font-size: 16px; }
@@ -130,24 +149,45 @@ div.learning-sketch-main {
   margin: 15px 0 2px 0; }
 
 .main-content {
-  margin-top: 0; }
+  margin-top: 0;
+  padding: 0 20%; }
 
 /******************
   Header Styles
 ***********/
 .header {
   border: 2px #ff9999 dashed; }
+  @media (min-width: 768px) {
+    .header {
+      border: none; } }
+
+@media (min-width: 768px) {
+  header {
+    border: 2px #ff9999 dashed; } }
 
 .header-title {
   margin: 20px 0;
   top: -10px; }
+  @media (min-width: 768px) {
+    .header-title {
+      position: absolute; } }
 
 .header-text {
   margin: 0; }
+  @media (min-width: 768px) {
+    .header-text {
+      text-align: left; } }
 
 /**********
   Nav
 ***********/
+.main-nav {
+  margin-bottom: 5%; }
+  @media (min-width: 768px) {
+    .main-nav {
+      position: relative;
+      text-align: right; } }
+
 nav li {
   display: inline-block; }
 
@@ -171,6 +211,35 @@ h3 {
 aside, .recent-blog, .recent-work {
   border: 2px #ff9999 dashed; }
 
+@media (min-width: 768px) {
+  .recent-blog {
+    float: left;
+    margin: 0 4% 5% 2%;
+    width: 46%; } }
+@media (min-width: 1024px) {
+  .recent-blog {
+    float: left;
+    margin: 0 5% 0 2%;
+    width: 28%; } }
+
+/**************
+  Recent Work
+***************/
+.recent-work {
+  margin: 5% 0; }
+  @media (min-width: 768px) {
+    .recent-work {
+      float: left;
+      margin: 0;
+      padding-bottom: 80px;
+      width: 46%; } }
+  @media (min-width: 1024px) {
+    .recent-work {
+      float: left;
+      margin: 0 2%;
+      padding-bottom: 55px;
+      width: 28%; } }
+
 /***********
   Aside
 ***********/
@@ -180,14 +249,40 @@ table, .th3, .th4, td {
 .th1, .th3 {
   border-right: 2px #ff9999 dashed; }
 
+.book-heading {
+  margin: 0; }
+
+@media (min-width: 768px) {
+  aside {
+    clear: both; } }
+@media (min-width: 1024px) {
+  aside {
+    float: right;
+    margin: 0;
+    width: 28%;
+    clear: right; } }
+
 /**************
   Social Links
 **************/
+@media (min-width: 768px) {
+  .main-footer {
+    margin-bottom: 50px;
+    text-align: right; } }
+
 footer {
   margin-top: 10%; }
 
+@media (min-width: 768px) {
+  footer ul {
+    float: left; } }
+
 footer li {
   display: inline-block; }
+  @media (max-width: 347px) {
+    footer li {
+      display: block;
+      padding: 20px; } }
 
 footer a {
   padding: 15px 10px; }
@@ -199,6 +294,11 @@ footer a {
   color: #ccc;
   font-size: 16px;
   padding-top: 10px; }
+  @media (min-width: 768px) {
+    .copyright {
+      margin: 0 30px 0 0;
+      padding-top: 5px;
+      text-align: right; } }
 
 .main-nav, .main-footer {
   margin: 10px 0;

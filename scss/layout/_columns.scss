@@ -13,6 +13,36 @@ h3 {
 aside, .recent-blog, .recent-work {
   border: $b;
 }
+.recent-blog {
+  @media #{$brk-medium}{
+  float: left;
+  margin: 0 4% 5% 2%;
+  width: 46%;
+  }
+  @media #{$brk-large}{
+      float: left;
+      margin: 0 5% 0 2%;
+      width: 28%;
+  }
+}
+/**************
+  Recent Work
+***************/
+.recent-work {
+  margin: 5% 0;
+  @media #{$brk-medium}{
+    float: left;
+    margin: 0;
+    padding-bottom: 80px;
+    width: 46%;
+  }
+  @media #{$brk-large}{
+    float: left;
+    margin: 0 2%;
+    padding-bottom: 55px;
+    width: 28%;
+  }
+}
 
 /***********
   Aside
@@ -20,7 +50,20 @@ aside, .recent-blog, .recent-work {
 table, .th3, .th4, td {
   border-top: $b;
 }
-
 .th1, .th3 {
   border-right: $b;
+}
+.book-heading{
+  margin: 0;
+}
+aside{
+  @media #{$brk-medium}{
+    clear: both;
+}
+  @media #{$brk-large}{
+    float: right;
+    margin: 0;
+    width: 28%;
+    clear: right;
+  }
 }

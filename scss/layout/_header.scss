@@ -3,15 +3,28 @@
 ***********/
 .header {
   border: $b;
+  @media #{$brk-medium}{
+    border: none;
+  }
 }
-
+header{
+  @media #{$brk-medium}{
+    border: $b;
+  }
+}
 .header-title {
   margin: 20px 0;
   top: -10px;
+  @media #{$brk-medium}{
+    position: absolute;
+  }
 }
 
 .header-text {
   margin: 0;
+  @media #{$brk-medium}{
+    text-align: left;
+  }
 }
 
 /**********
@@ -19,6 +32,11 @@
 ***********/
 .main-nav {
   @extend %t-space;
+  margin-bottom: 5%;
+  @media #{$brk-medium}{
+    position: relative;
+    text-align: right;
+  }
 }
 
 nav ul {

@@ -2,154 +2,9 @@
 /*****************************************************************
   Media Queries
 ****************/
-
-@media (max-width: 347px) {
-  body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 2% 4%;
-    text-align: center;
-  }
-  .main-nav{
-    margin-bottom: 5%;
-  }
-  .recent-work {
-    border: 2px #ff9999 dashed;
-    margin: 5% 0;
-    padding-bottom: 55px;
-  }
-
-  aside{
-    border: 2px #ff9999 dashed;
-  }
-  .book-heading{
-    margin: 0;
-  }
-
-  footer li {
-  display: block;
-  padding: 20px;
-  }
-}
-@media (min-width:348px){
-  .main-nav{
-    margin-bottom: 5%;
-  }
-  .recent-work {
-    border: 2px #ff9999 dashed;
-    margin: 5% 0;
-    padding-bottom: 55px;
-  }
-  .book-heading{
-  margin: 0;
-}
-  aside{
-    border: 2px #ff9999 dashed;
-    float: right;
-    margin: 0 0 2% 0;
-  }
-  nav a, .header-text, .blog-heading, .work-heading, .book-heading, .social-links{
-    font-size: 2em;
-  }
-  .header-title, .greeting {
-    font-size: 6em;
-  }
-  .greeting{
-    font-size: 3em;
-  }
-  .main-content{
-    font-size: 1.3em;
-    padding: 0 20%;
-  }
-  .follow-blog-text{
-    font-size: 1em;
-  }
-  .th1, .th2, .th3, .th4{
-    font-size: 1.5em;
-  }
-  .copyright {
-    font-size: 16px;
-  }
-}
 @media (min-width:768px){
-  body {
-    margin: 1% 4%;
-  }
-  header {
-    border: 2px #ff9999 dashed;
-  }
-  .header {
-    border: none;
-  }
-  .header-title {
-    position: absolute;
-  }
-  .header-text{
-    text-align: left;
-  }
-  .main-nav {
-    position: relative;
-    text-align: right;
-  }
-  .recent-blog {
-    float: left;
-    margin: 0 4% 5% 2%;
-    width: 46%;
-  }
-  .recent-work {
-    float: left;
-    margin: 0;
-    padding-bottom: 55px;
-    width: 46%;
-  }
-  aside{
-    clear: both;
-  }
-  .book-heading{
-    margin:0;
-  }
-  .main-footer {
-    margin-bottom: 50px;
-    text-align: right;
-  }
-  .social-bar {
-    margin-left: 10px;
-  }
-  footer ul {
-    float: left;
-  }
-  footer li {
-    display: inline-block;
-  }
-  footer a {
-    padding: 15px 10px;
-  }
-  .copyright {
-    margin: 0 30px 0 0;
-    padding-top: 0;
-    text-align: right;
-  }
-  nav a, .header-text, .blog-heading, .work-heading, .book-heading, .social-links{
-    font-size: 2em;
-  }
-  .header-title, .greeting {
-    font-size: 5em;
-  }
-  .greeting{
-    font-size: 3em;
-  }
-  .main-content{
-    font-size: 1.2em;
-    padding: 0 20%;
-  }
-  .follow-blog-text{
-    font-size: 1em;
-  }
-  .th1, .th2, .th3, .th4{
-    font-size: 1.7em;
-  }
-  .copyright {
-    font-size: 16px;
-  }
+
+
   .blog-date {
     display: contents;
     position: absolute;
@@ -161,30 +16,6 @@
 }
 /*********************************************/
 @media (min-width:1024px) {
-  body {
-    margin: 1% 4%;
-  }
-
-  .recent-blog {
-    float: left;
-    margin: 0 5% 0 2%;
-    width: 28%;
-  }
-  .recent-work {
-    float: left;
-    margin: 0 2%;
-    padding-bottom: 55px;
-    width: 28%;
-  }
-  aside {
-    float: right;
-    margin: 0;
-    width: 28%;
-  }
-  aside{
-    clear: right;
-  }
-
   footer ul {
     float: left;
   }
@@ -229,16 +60,14 @@
   }
 }
 @media (min-width:1440px) {
-  body{
-    margin: 2% 5%;
-  }
+
   .header-title{
     margin-top: 4%;
   }
   nav a, .header-text, .blog-heading, .work-heading, .book-heading, .social-links{
     font-size: 2.5em;
   }
-  .header-title, .greeting {
+  .header-title,  {
     font-size: 7em;
   }
   .greeting{
@@ -246,24 +75,9 @@
   }
   .main-content{
     font-size: 1.5em;
-    padding: 0 20%;
   }
   .follow-blog-text{
     font-size: 1.2em;
-  }
-  .th1, .th2, .th3, .th4{
-    font-size: 1.5em;
-  }
-  .copyright {
-    font-size: 16px;
-  }
-}
-@media (min-width:2560px) {
-  body{
-    margin: 2% 20%;
-  }
-  .header-title{
-    margin-top: 3%;
   }
 
 }

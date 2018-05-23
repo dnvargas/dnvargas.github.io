@@ -6,16 +6,35 @@
 }
 nav a, .header-text, .blog-heading, .blog-title, .work-heading, .book-heading, .social-links{
   font-size: 1.8em;
+  @media #{$brk-small}{
+    font-size: 2em;
+  }
 }
-.header-title, .greeting {
+.header-title{
   font-family: $stack-cursive;
   font-size: 5.5em;
+  @media #{$brk-small}{
+      font-size: 6em;
+  }
 }
 .greeting{
+  font-family: $stack-cursive;
   font-size: 2.5em;
+  @media #{$brk-small}{
+    font-size: 3em;
+  }
+}
+.main-content{
+  font-size: 1.3em;
+}
+.follow-blog-text{
+  font-size: 1em;
 }
 .th1, .th2, .th3, .th4, .blog-title, .work-title{
   font-size: 1.5em;
+  @media #{$brk-medium}{
+    font-size: 1.7em;
+  }
 }
 .copyright {
   font-size: 16px;
