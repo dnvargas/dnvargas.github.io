@@ -173,38 +173,50 @@ div.learning-sketch-main {
 /******************
   Header Styles
 ***********/
+@media (min-width: 768px) {
+  header {
+    border: 2px #ff9999 dashed; } }
+
 .header {
   border: 2px #ff9999 dashed; }
   @media (min-width: 768px) {
     .header {
       border: none; } }
 
-@media (min-width: 768px) {
-  header {
-    border: 2px #ff9999 dashed; } }
-
 .header-title {
-  margin: 5% 0 0 0;
-  top: -10px; }
+  margin: 5% 0 0 0; }
+  @media (max-width: 347px) {
+    .header-title {
+      top: -10%; } }
   @media (min-width: 768px) {
     .header-title {
+      top: -2%;
       position: absolute; } }
   @media (min-width: 1024px) {
     .header-title {
-      margin-top: 4%; } }
-
-.header-text {
-  margin: 0; }
-  @media (min-width: 768px) {
-    .header-text {
-      text-align: left;
-      padding-top: 2%; } }
-  @media (min-width: 1024px) {
-    .header-text {
-      padding-top: 2%; } }
+      top: -3%; } }
   @media (min-width: 2560px) {
-    .header-text {
-      padding-top: 3%; } }
+    .header-title {
+      top: -6%; } }
+
+@media (max-width: 347px) {
+  .header-text-group {
+    padding: 1% 0 1% 0; } }
+@media (min-width: 348px) {
+  .header-text-group {
+    padding: 1% 0 1% 0; } }
+@media (min-width: 768px) {
+  .header-text-group {
+    padding: 3% 0 1% 0; } }
+@media (min-width: 1024px) {
+  .header-text-group {
+    padding: 4% 0 1% 0; } }
+@media (min-width: 1440px) {
+  .header-text-group {
+    padding: 4% 0 1% 0; } }
+@media (min-width: 2560px) {
+  .header-text-group {
+    padding: 3% 0 1% 0; } }
 
 /**********
   Nav
@@ -317,6 +329,9 @@ table, .th3, .th4, td {
 footer {
   margin-top: 10%; }
 
+@media (min-width: 348px) {
+  footer ul {
+    margin-left: -5%; } }
 @media (min-width: 768px) {
   footer ul {
     float: left; } }
@@ -326,15 +341,16 @@ footer li {
   @media (max-width: 347px) {
     footer li {
       display: block;
-      padding: 20px; } }
+      padding: 20px;
+      margin: 1px; } }
 
 footer a {
-  padding: 15px 10px; }
+  padding: 15px 10px;
+  margin: 2% 1%; }
   @media (min-width: 348px) {
     footer a {
       display: flex;
-      justify-content: space-around;
-      padding: 20px; } }
+      margin-top: 4%; } }
 
 /**************
   Copyright
@@ -355,7 +371,6 @@ footer a {
 
 nav ul, footer ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0; }
+  padding-left: 0; }
 
 /*# sourceMappingURL=application.css.map */

@@ -12,10 +12,14 @@
 
 footer{
   margin-top: 10%;
+
 }
 
 footer ul{
   @extend %no-style;
+  @media #{$brk-small}{
+    margin-left:-5%;
+  }
   @media #{$brk-medium}{
     float: left;
   }
@@ -26,15 +30,16 @@ footer li {
   @media #{$brk-very-small}{
     display: block;
     padding: 20px;
+    margin: 1px;
   }
 }
 
 footer a {
   padding: 15px 10px;
+  margin: 2% 1%;
   @media #{$brk-small}{
     display:flex;
-    justify-content: space-around;
-    padding: 20px;
+    margin-top: 4%;
   }
 }
 

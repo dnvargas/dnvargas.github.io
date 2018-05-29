@@ -1,38 +1,52 @@
 /******************
   Header Styles
 ***********/
+header{
+  @media #{$brk-medium}{
+    border: $b;
+  }
+}
 .header {
   border: $b;
   @media #{$brk-medium}{
     border: none;
   }
 }
-header{
-  @media #{$brk-medium}{
-    border: $b;
-  }
-}
 .header-title {
-  margin: 5% 0 0 0;
-  top: -10px;
+    margin: 5% 0 0 0;
+  @media #{$brk-very-small}{
+  top: -10%;
+}
   @media #{$brk-medium}{
+    top: -2%;
     position: absolute;
   }
   @media #{$brk-large}{
-    margin-top: 4%;
-  }
-}
-.header-text {
-  margin: 0;
-  @media #{$brk-medium}{
-    text-align: left;
-    padding-top: 2%;
-  }
-  @media #{$brk-large}{
-    padding-top: 2%;
+    top: -3%;
   }
   @media #{$brk-super-large}{
-    padding-top: 3%;
+    top: -6%;
+  }
+}
+.header-text-group{
+  // padding-top: 20%;
+  @media #{$brk-very-small}{
+    padding: 1% 0 1% 0;
+  }
+  @media #{$brk-small}{
+    padding: 1% 0 1% 0;
+  }
+  @media #{$brk-medium}{
+    padding: 3% 0 1% 0;
+  }
+  @media #{$brk-large}{
+    padding: 4% 0 1% 0;
+  }
+  @media #{$brk-very-large}{
+    padding: 4% 0 1% 0;
+  }
+  @media #{$brk-super-large}{
+    padding: 3% 0 1% 0;
   }
 }
 
