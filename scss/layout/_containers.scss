@@ -12,3 +12,27 @@
   margin-top: 0;
   padding: 0 20%;
 }
+.photo{
+  @media #{$brk-very-small}{
+    padding: 7% 0 0;
+  }
+  @media #{$brk-small}{
+    padding: 7% 0 0 0;
+  }
+  @media #{$brk-medium}{
+    padding: 3% 0 0 0;
+  }
+  @media #{$brk-large}{
+    padding: 4% 0 0 0;
+  }
+  @media #{$brk-very-large}{
+    padding: 3% 0 0 0;
+  }
+  @media #{$brk-super-large}{
+    padding: 6% 0 0 0;
+  }
+}
+.profile-pic, .about-pic{
+  box-sizing: border-box;
+    border-radius: 50%;
+}
