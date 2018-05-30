@@ -1,7 +1,7 @@
 /*****************
   Fonts and Size
 *****************/
-.main-nav, .header-text,.symbol, .blog-heading, .work-heading, .work-title, .book-heading, .th1, .th2, .th3, .th4, .social-links{
+.main-nav, .header-text,.symbol, .blog-heading, .blog-title, .work-heading, .work-title, .book-heading, .th1, .th2, .th3, .th4, .social-links{
   font-family: $stack-capitol;
 }
 nav a, .header-text,.symbol, .blog-heading, .blog-title, .work-heading, .book-heading, .social-links{
@@ -17,7 +17,7 @@ nav a, .header-text,.symbol, .blog-heading, .blog-title, .work-heading, .book-he
   font-family: $stack-cursive;
   font-size: 5.5em;
   @media #{$brk-small}{
-      font-size: 6em;
+    font-size: 6em;
   }
   @media #{$brk-large}{
     font-size: 7em;
@@ -57,7 +57,7 @@ nav a, .header-text,.symbol, .blog-heading, .blog-title, .work-heading, .book-he
 /***************
   Letter Spacing
 ****************/
-.blog-heading, .work-title, .work-heading, .book-heading, .th1, .th2, .th3, .th4{
+.blog-heading, .blog-title .work-title, .work-heading, .book-heading, .th1, .th2, .th3, .th4{
   letter-spacing: .1em;
 }
 /***************
@@ -118,7 +118,7 @@ main, section, aside, .main-content, .treehouse {
 }
 
 .symbol{
-  color: $color-quat;
+  color: $color-text-base;
 }
 /***********************
   Learning-Sketch-Blog

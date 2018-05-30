@@ -9,7 +9,7 @@ body {
 /*****************
   Fonts and Size
 *****************/
-.main-nav, .header-text, .symbol, .blog-heading, .work-heading, .work-title, .book-heading, .th1, .th2, .th3, .th4, .social-links {
+.main-nav, .header-text, .symbol, .blog-heading, .blog-title, .work-heading, .work-title, .book-heading, .th1, .th2, .th3, .th4, .social-links {
   font-family: "Amatic SC", cursive; }
 
 nav a, .header-text, .symbol, .blog-heading, .blog-title, .work-heading, .book-heading, .social-links {
@@ -65,7 +65,7 @@ nav a, .header-text, .symbol, .blog-heading, .blog-title, .work-heading, .book-h
 /***************
   Letter Spacing
 ****************/
-.blog-heading, .work-title, .work-heading, .book-heading, .th1, .th2, .th3, .th4 {
+.blog-heading, .blog-title .work-title, .work-heading, .book-heading, .th1, .th2, .th3, .th4 {
   letter-spacing: .1em; }
 
 /***************
@@ -123,7 +123,7 @@ main, section, aside, .main-content, .treehouse {
   color: #ccc; }
 
 .symbol {
-  color: #ccc; }
+  color: #999; }
 
 /***********************
   Learning-Sketch-Blog
@@ -285,18 +285,21 @@ h3 {
 aside, .recent-blog, .recent-work {
   border: 2px #ff9999 dashed; }
 
-.recent-blog {
-  padding-bottom: 50px; }
-  @media (min-width: 768px) {
-    .recent-blog {
-      float: left;
-      margin: 0 4% 5% 2%;
-      width: 46%; } }
-  @media (min-width: 1024px) {
-    .recent-blog {
-      float: left;
-      margin: 0 5% 0 2%;
-      width: 28%; } }
+.blog-title {
+  margin-right: -3px;
+  margin-left: -3px;
+  text-decoration: none; }
+
+@media (min-width: 768px) {
+  .recent-blog {
+    float: left;
+    margin: 0 4% 5% 2%;
+    width: 46%; } }
+@media (min-width: 1024px) {
+  .recent-blog {
+    float: left;
+    margin: 0 5% 0 2%;
+    width: 28%; } }
 
 .blog-date {
   display: contents;
@@ -319,7 +322,7 @@ aside, .recent-blog, .recent-work {
   @media (min-width: 768px) {
     .recent-work {
       float: left;
-      margin: 0;
+      margin: 0 0 5% 0;
       padding-bottom: 80px;
       width: 46%; } }
   @media (min-width: 1024px) {

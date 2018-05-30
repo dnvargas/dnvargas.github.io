@@ -13,8 +13,12 @@ h3 {
 aside, .recent-blog, .recent-work {
   border: $b;
 }
+.blog-title{
+  margin-right: -3px;
+  margin-left: -3px;
+  text-decoration: none;
+}
 .recent-blog {
-  padding-bottom: 50px;
   @media #{$brk-medium}{
   float: left;
   margin: 0 4% 5% 2%;
@@ -26,7 +30,6 @@ aside, .recent-blog, .recent-work {
       width: 28%;
   }
 }
-
   .blog-date {
     display: contents;
     position: absolute;
@@ -48,7 +51,7 @@ aside, .recent-blog, .recent-work {
   padding-bottom: 30px;
   @media #{$brk-medium}{
     float: left;
-    margin: 0;
+    margin: 0 0 5% 0;
     padding-bottom: 80px;
     width: 46%;
   }
