@@ -190,8 +190,15 @@ div.learning-sketch-main {
     padding: 6% 0 0 0; } }
 
 .profile-pic, .about-pic {
-  box-sizing: border-box;
   border-radius: 50%; }
+
+/****************
+  About page
+***************/
+.content {
+  width: auto;
+  height: auto;
+  overflow: hidden; }
 
 /******************
   Header Styles
@@ -278,16 +285,18 @@ h3 {
 aside, .recent-blog, .recent-work {
   border: 2px #ff9999 dashed; }
 
-@media (min-width: 768px) {
-  .recent-blog {
-    float: left;
-    margin: 0 4% 5% 2%;
-    width: 46%; } }
-@media (min-width: 1024px) {
-  .recent-blog {
-    float: left;
-    margin: 0 5% 0 2%;
-    width: 28%; } }
+.recent-blog {
+  padding-bottom: 50px; }
+  @media (min-width: 768px) {
+    .recent-blog {
+      float: left;
+      margin: 0 4% 5% 2%;
+      width: 46%; } }
+  @media (min-width: 1024px) {
+    .recent-blog {
+      float: left;
+      margin: 0 5% 0 2%;
+      width: 28%; } }
 
 .blog-date {
   display: contents;
@@ -305,7 +314,8 @@ aside, .recent-blog, .recent-work {
   Recent Work
 ***************/
 .recent-work {
-  margin: 5% 0; }
+  margin: 5% 0;
+  padding-bottom: 30px; }
   @media (min-width: 768px) {
     .recent-work {
       float: left;

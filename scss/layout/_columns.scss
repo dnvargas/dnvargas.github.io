@@ -14,6 +14,7 @@ aside, .recent-blog, .recent-work {
   border: $b;
 }
 .recent-blog {
+  padding-bottom: 50px;
   @media #{$brk-medium}{
   float: left;
   margin: 0 4% 5% 2%;
@@ -44,6 +45,7 @@ aside, .recent-blog, .recent-work {
 ***************/
 .recent-work {
   margin: 5% 0;
+  padding-bottom: 30px;
   @media #{$brk-medium}{
     float: left;
     margin: 0;

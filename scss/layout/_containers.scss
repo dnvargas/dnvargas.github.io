@@ -33,6 +33,13 @@
   }
 }
 .profile-pic, .about-pic{
-  box-sizing: border-box;
     border-radius: 50%;
+}
+/****************
+  About page
+***************/
+.content{
+  width: auto;
+  height: auto;
+  overflow: hidden;
 }
