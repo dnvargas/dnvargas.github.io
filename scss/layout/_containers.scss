@@ -13,6 +13,12 @@
   padding: 0 20%;
 }
 .photo{
+  // position: absolute;
+  // top: 230px;
+  // left: 123px;
+  // z-index: 2;
+
+
   @media #{$brk-very-small}{
     padding: 7% 0 0;
   }
@@ -30,8 +36,16 @@
   }
   @media #{$brk-super-large}{
     padding: 6% 0 0 0;
+
   }
 }
+// .border-flower{
+//   position: absolute;
+//   top: 150px;
+//   left: 5px;
+//   z-index: 1;
+// }
+
 .profile-pic, .about-pic{
     border-radius: 50%;
 }
