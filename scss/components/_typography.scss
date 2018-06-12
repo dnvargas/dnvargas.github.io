@@ -64,7 +64,7 @@ nav a, .header-text,.symbol, .blog-heading, .blog-title, .work-heading, .book-he
   Font Colors
 ****************/
 /** Orange **/
- .header-text, nav a{
+ .header-text-group, nav a{
     color: $color-prim;
 }
 
@@ -117,9 +117,6 @@ main, section, aside, .main-content, .treehouse {
   color: $color-text-light;
 }
 
-.symbol{
-  color: $color-text-base;
-}
 /***********************
   Learning-Sketch-Blog
 ***********************/
