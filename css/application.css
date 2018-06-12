@@ -72,7 +72,7 @@ nav a, .header-text, .symbol, .blog-heading, .blog-title, .work-heading, .book-h
   Font Colors
 ****************/
 /** Orange **/
-.header-text, nav a {
+.header-text-group, nav a {
   color: #ffc0ac; }
 
 .header-title {
@@ -121,9 +121,6 @@ main, section, aside, .main-content, .treehouse {
 /** Light Gray **/
 .copyright {
   color: #ccc; }
-
-.symbol {
-  color: #999; }
 
 /***********************
   Learning-Sketch-Blog
