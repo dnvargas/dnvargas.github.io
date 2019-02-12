@@ -23,11 +23,17 @@ nav a, .header-text, .symbol, .blog-heading, .blog-title, .work-heading, .book-h
 
 .header-title {
   font-family: "Allura", cursive;
-  font-size: 5.5em; }
+  font-size: 5em; }
   @media (min-width: 348px) {
     .header-title {
       font-size: 6em; } }
+  @media (min-width: 768px) {
+    .header-title {
+      font-size: 3.7em; } }
   @media (min-width: 1024px) {
+    .header-title {
+      font-size: 5em; } }
+  @media (min-width: 2560px) {
     .header-title {
       font-size: 7em; } }
 
@@ -217,18 +223,18 @@ div.learning-sketch-main {
       top: -10%; } }
   @media (min-width: 768px) {
     .header-title {
-      top: -2%;
+      top: -1%;
       position: absolute; } }
   @media (min-width: 1024px) {
     .header-title {
-      top: -3%; } }
+      top: -2%; } }
   @media (min-width: 2560px) {
     .header-title {
-      top: -6%; } }
+      top: -1%; } }
 
 @media (max-width: 347px) {
   .header-text-group {
-    padding: 1% 0 1% 0; } }
+    padding: 0% 0 1% 0; } }
 @media (min-width: 348px) {
   .header-text-group {
     padding: 1% 0 1% 0; } }
@@ -243,7 +249,7 @@ div.learning-sketch-main {
     padding: 4% 0 1% 0; } }
 @media (min-width: 2560px) {
   .header-text-group {
-    padding: 3% 0 1% 0; } }
+    padding: 3% 0 1% 0%; } }
 
 /**********
   Nav
