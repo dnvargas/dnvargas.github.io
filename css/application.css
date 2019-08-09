@@ -222,13 +222,18 @@ div.learning-sketch-main {
 
 .greeting {
   margin: 15px 0 2px 0;
+  grid-area: greeting;
 }
 
 .main-content {
   margin-top: 0;
   padding: 0 20%;
+  grid-area: main-content;
 }
 
+.photo {
+  grid-area: photo;
+}
 @media (max-width: 347px) {
   .photo {
     padding: 7% 0 0;
@@ -264,6 +269,23 @@ div.learning-sketch-main {
   border-radius: 50%;
 }
 
+.follow-blog-text {
+  grid-area: follow-blog-text;
+}
+
+main {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "photo" "greeting" "main-content" "follow-blog-text";
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "photo greeting" "photo main-content" "photo follow-blog-text";
+    padding: 20px;
+  }
+}
 /****************
   About page
 ***************/
