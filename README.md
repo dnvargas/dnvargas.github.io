@@ -4,7 +4,7 @@ My personal website including:
 
 * About Me
 * Skills & Tools
-* Work Projects
+* Professional Projects
 * Passion Projects
 * Blog
 * Social Media
